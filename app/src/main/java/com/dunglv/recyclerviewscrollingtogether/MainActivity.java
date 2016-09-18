@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         int items[][];
-        items = new int[30][10];
+        items = new int[50][10];
 
         int count = 0;
         for (int i = count; i < items.length; i++) {
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         });
         // index column
         List<Integer> indexList = new ArrayList<>();
-        for (int i = 1; i < items.length; i++) {
+        for (int i = 0; i < items.length; i++) {
             indexList.add(i);
         }
         SimpleTextAdapter columnAdapter = new SimpleTextAdapter(indexList);

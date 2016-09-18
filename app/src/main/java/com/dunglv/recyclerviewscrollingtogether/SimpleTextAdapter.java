@@ -47,7 +47,7 @@ public class SimpleTextAdapter extends RecyclerView.Adapter<SimpleTextAdapter.Vi
 
         public void bind(int position) {
             title.setBackgroundColor(Color.CYAN);
-            title.setText(position + "");
+            title.setText(list.get(position) + "");
         }
     }
 }
